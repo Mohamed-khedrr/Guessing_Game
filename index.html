@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@400;500&family=Nunito:wght@700&family=Poppins:wght@500;800&family=VT323&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="welcome">
+      <div class="welcome-container">
+        <h3>Welcome</h3>
+        <h1>Hello form Guess Game</h1>
+        <div class="ready-button-container">
+          <button id="ready-button" class="ready-button">Ready</button>
+        </div>
+      </div>
+      <h3>Rules :</h3>
+      <ol>
+        <h4>
+          <li>Chose a number frome 0 to 1000</li>
+          <li>Keep the number in your mind and i will try to guess it</li>
+          <li>
+            I'll make some tries and you should tell me if the number you have
+            chosen
+            <ul class="rules-list">
+              <li>Higher</li>
+              <li>Smaller</li>
+              <li>Exact</li>
+            </ul>
+          </li>
+        </h4>
+      </ol>
+      <h3 class="enjoy">Enjoy ..</h3>
+    </section>
+    <section id="start-game">
+      <h2>IS THE NUMBER :</h2>
+      <div class="ready-button-container">
+        <button id="guessed-number" class="number-button"></button>
+      </div>
+      <div class="navigation">
+        <button class="nav-buttons" id="higher-button">HIGHER</button>
+        <button class="nav-buttons" id="exact-button">EXACT</button>
+        <button class="nav-buttons" id="smaller-button">SMALLER</button>
+      </div>
+    </section>
+    <section id="end-game">
+      <div id="report"></div>
+      <button id="again-button">Again !</button>
+    </section>
+    <!-- Script -->
+    <script src="main.js"></script>
+  </body>
+</html>
