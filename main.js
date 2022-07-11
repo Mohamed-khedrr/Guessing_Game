@@ -27,6 +27,7 @@ let max = arr.length;
 let min = 0;
 let mid = 500;
 let indecatorChar;
+let reportMessage;
 guessedNumber.innerHTML = 500;
 
 function binarySearch() {
@@ -57,13 +58,13 @@ exactButton.addEventListener("click", () => {
   indecatorChar = "e";
   endGamePage.style.display = "flex";
   startGamePage.style.display = "none";
+  reportMessage = `<h2>You Number is<br/>
+  <button  class="report-button">${mid}</button>
+  <br/> I Gussed it in just ${steps} guesses`;
+  reportDiv.innerHTML = reportMessage;
 });
 
 // Report Message
-let reportMessage = `<h2>You Number is<br/>
-<button  class="report-button">${mid}</button>
-<br/> I Gussed it in just ${steps} guesses`;
-reportDiv.innerHTML = reportMessage;
 
 // Ready Button Action
 readyButton.addEventListener("click", () => {
