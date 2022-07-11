@@ -22,7 +22,7 @@ startGamePage.style.display = "none";
 endGamePage.style.display = "none";
 
 // default values
-let steps = 1;
+let steps = 0;
 let max = arr.length;
 let min = 0;
 let mid = 500;
